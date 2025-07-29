@@ -3,26 +3,42 @@ title: Star Wars Characters
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="bg-white text-black">
+<html lang="en" class="bg-[#0f0e0e] font-mono border-t-2 border-[#ffe3d1]">
   <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/assets/styles/index.css">
   </head>
-  <body>
-    <div class="container mx-auto flex flex-col justify-center items-center">
-      <h1 class="text-3xl font-bold mt-12 mb-6">Star Wars Characters</h1>
-      <ul>
-        <li class="text-lg">Luke Skywalker</li>
-        <li class="text-lg">C-3PO</li>
-        <li class="text-lg">R2-D2</li>
-        <li class="text-lg">Darth Vader</li>
-        <li class="text-lg">Leia Organa</li>
-        <li class="text-lg">Owen Lars</li>
-        <li class="text-lg">Beru Whitesun lars</li>
-        <li class="text-lg">R5-D4</li>
-        <li class="text-lg">Biggs Darklighter</li>
-        <li class="text-lg">Obi-Wan Kenobi</li>
+  <body class="max-w-3xl px-8 mx-auto min-h-screen flex flex-col">
+    <header class="mt-[50px] pt-16">
+      <h1 class="tracking-wide text-[#ffe3d1] text-2xl font-bold">Vais Mahendran</h1>
+      {# <div class="text-[#ef9e84] font-thin">
+        <ul class="flex">
+          <li class="text-[13px] pr-4 mr-4 border-r border-dotted"><a  class="hover:underline"href="#">Home</a></li>
+          <li class="text-[13px]"><a  class="hover:underline"href="#">About</a></li>
+        </ul>
+      </div> #}
+    </header>
+    <section class="mt-6 text-[#ffe3d1] text-sm flex flex-col gap-4">
+      <h1 class="tracking-wide text-[#ef9e84] text-xl font-bold">About</h1>
+      <p>
+        Hey there! I'm Vais, a software engineer and team lead working on various projects at Thrive Career Wellness for the last 8 years.
+      </p>
+      <p>
+        Outside of work, I watch hockey, getting destroyed at board games, and lifting.
+      </p>
+      <p>
+        This site is still a work in progress, but I hope to share more about my work and projects here.
+      </p>
+    </section>
+    <section class="mt-6 flex flex-col flex-grow gap-4">
+      <h1 class="tracking-wide text-[#ef9e84] text-xl font-semibold">Projects</h1>
+      <ul class="flex flex-col gap-2">
+        <li class="text-[#ffe3d1] text-sm"><span class="underline underline-offset-4">Prospects Hockey</span>: Projects upcoming NHL prospects & players</li>
+        <li class="text-[#ffe3d1] text-sm"><span class="underline underline-offset-4">Hockey Scores</span>: New tab chrome extension for getting latest NHL scores</li>
       </ul>
-    </div>
+    </section>
+    <footer class="flex text-[#ffe3d1] text-xs mt-auto mb-6">
+      <p> Copyright © 2025 Vais Mahendran</p>
+    </footer>
   </body>
 </html>

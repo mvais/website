@@ -3,42 +3,77 @@ title: Star Wars Characters
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="bg-[#0f0e0e] font-mono border-t-2 border-[#ffe3d1]">
+<html lang="en" class="bg-[#0f0e0e] font-mono border-t-2 border-emerald-200">
   <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/assets/styles/index.css">
   </head>
-  <body class="max-w-3xl px-8 mx-auto min-h-screen flex flex-col">
-    <header class="mt-[50px] pt-16">
-      <h1 class="tracking-wide text-[#ffe3d1] text-2xl font-bold">Vais Mahendran</h1>
-      {# <div class="text-[#ef9e84] font-thin">
-        <ul class="flex">
-          <li class="text-[13px] pr-4 mr-4 border-r border-dotted"><a  class="hover:underline"href="#">Home</a></li>
-          <li class="text-[13px]"><a  class="hover:underline"href="#">About</a></li>
-        </ul>
-      </div> #}
-    </header>
-    <section class="mt-6 text-[#ffe3d1] text-sm flex flex-col gap-4">
-      <h1 class="tracking-wide text-[#ef9e84] text-xl font-bold">About</h1>
-      <p>
-        Hey there! I'm Vais, a software engineer and team lead working on various projects at Thrive Career Wellness for the last 8 years.
-      </p>
-      <p>
-        Outside of work, I watch hockey, getting destroyed at board games, and lifting.
-      </p>
-      <p>
-        This site is still a work in progress, but I hope to share more about my work and projects here.
-      </p>
-    </section>
-    <section class="mt-6 flex flex-col flex-grow gap-4">
-      <h1 class="tracking-wide text-[#ef9e84] text-xl font-semibold">Projects</h1>
-      <ul class="flex flex-col gap-2">
-        <li class="text-[#ffe3d1] text-sm"><span class="underline underline-offset-4">Prospects Hockey</span>: Projects upcoming NHL prospects & players</li>
-        <li class="text-[#ffe3d1] text-sm"><span class="underline underline-offset-4">Hockey Scores</span>: New tab chrome extension for getting latest NHL scores</li>
-      </ul>
-    </section>
-    <footer class="flex text-[#ffe3d1] text-xs mt-auto mb-6">
-      <p> Copyright © 2025 Vais Mahendran</p>
-    </footer>
+  <body class="min-h-screen mx-auto max-w-lg md:max-w-xl lg:max-w-2xl px-6">
+    <main class="pt-16 md:text-base lg:text-lg text-zinc-300">
+      <div class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold text-white">Vais Mahendran</h1>
+        <div class="flex items-center gap-3">
+          <a href="https://x.com/m_vais">
+            <svg width="1em" height="1em" class="text-white" data-icon="x">
+              <symbol id="ai:local:x" viewbox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61
+                    20.644h2.039L6.486 3.24H4.298Z"></path>
+              </symbol>
+              <use href="#ai:local:x"></use>
+            </svg>
+          </a>
+          <a href="https://github.com/mvais">
+            <svg width="1em" height="1em" class="text-white" data-icon="octicon:mark-github-24">
+              <symbol id="ai:octicon:mark-github-24" viewbox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12 1C5.923 1 1 5.923 1 12c0 4.868 3.149 8.979 7.521
+                    10.436c.55.096.756-.233.756-.522c0-.262-.013-1.128-.013-2.049c-2.764.509-3.479-.674-3.699-1.292c-.124-.317-.66-1.293-1.128-1.554c-.385-.206-.935-.715-.013-.729c.866-.014
+                    1.485.797 1.691 1.128c.99 1.663 2.571 1.196
+                    3.204.907c.096-.715.385-1.196.701-1.471c-2.447-.275-5.005-1.224-5.005-5.431c0-1.197.426-2.187
+                    1.128-2.957c-.11-.275-.495-1.402.11-2.915c0 0 .92-.288 3.024 1.128c.88-.248 1.816-.372 2.75-.372c.936 0 1.87.124
+                    2.75.372c2.104-1.43 3.025-1.128 3.025-1.128c.605 1.513.22 2.64.11 2.915c.702.77 1.128 1.747 1.128 2.957c0 4.22-2.571
+                    5.156-5.019 5.43c.399.345.743 1.005.743 2.036c0 1.471-.014 2.654-.014 3.025c0 .288.206.632.756.522A11.02 11.02 0 0 0 23
+                    12c0-6.077-4.922-11-11-11"></path>
+              </symbol>
+              <use href="#ai:octicon:mark-github-24"></use>
+            </svg>
+          </a>
+          <a href="#">
+            💎
+          </a>
+        </div>
+      </div>
+      <section class="mt-8 text-sm">
+        <p>
+          Hey there! I'm Vais, a software engineer and team lead working on various projects at 
+          Thrive Career Wellness for the last 8 years.
+        </p>
+        <p class="mt-4">
+          Outside of work, I watch hockey, getting destroyed at board games, and lifting.
+        </p>
+        <p class="mt-4">
+          This site is still a work in progress, but I hope to share more about my work and projects here.
+        </p>
+      </section>
+      <section class="mt-8 text-sm">
+        <h2 class="tracking-wide text-lg font-semibold text-white">Projects</h1>
+        <div class="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-4 mt-4">
+          <div class="text-sm">
+            <span class="underline underline-offset-4 text-white">Prospects Hockey</span>:
+          </div>
+          <div class="text-sm">
+            Projects upcoming NHL prospects & players in the NHL this is a long term project focused on data science.
+          </div>
+        </div>
+      </section>
+      <footer class="flex text-white text-xs mt-auto mb-6">
+        <p>
+          Copyright © 2025 Vais Mahendran
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
